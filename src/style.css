@@ -1,1 +1,21 @@
-/* Acá va tu código */
+.ocultar{
+	display: none;
+
+}
+
+h1 {
+	background-color: green;
+	width: 700px;	
+	text-align: center;
+	margin: auto;
+
+}
+img{
+	width: 700px;
+	height: 400px;
+	margin: auto;
+	text-align: center;
+	display:block;
+	
+
+}

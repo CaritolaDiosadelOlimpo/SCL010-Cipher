@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+ <head>
+   <meta charset="utf-8">
+   <title>Caesar Cipher</title>
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+   <div id="root">
+     <h1>Denuncia Seguro!</h1>
+     <img src="img/ensalada_cesar_1.jpg" alt="ensalada_cesar_1">
+   </div>
+
+   <div>
+     <div id="Formulario_1">
+       <h1>Codificar Mensaje:</h1>
+       <img src="img/Ejemplo_cesar_1.png" alt="Ejemplo_cesar_1">
+       <form id="frm1">   <!-- action="/action_page.php" -->
+         Texto a ser codificado: <input type="text" name="Texto_a_codificar" value="ingresa tu texto aquí"><br>
+         OFFSET: <input type="number" name="OFFSET" value="2"><br><br>
+         <!-- <input type="submit" value="Submit"> -->
+       </form> 
+       <button onclick="myFunction1()">CODIFICAR</button>
+
+     </div>
+     <div id="Resultado_1">
+       <h2>Resultado CODIFICADO</h2>
+       <p id="demo"></p>
+     </div>
+   </div>
+
+
+   <div>
+     <div id="Formulario_2">
+       <h1>DE Codificar Mensaje:</h1>
+       <img src="img/Ejemplo_cesar_1.png" alt="Ejemplo_cesar_1">
+       <form id="frm2">   <!-- action="/action_page.php" -->
+         Texto a ser codificado: <input type="text" name="Texto_a_codificar" value="ingresa tu texto aquí"><br>
+         OFFSET: <input type="number" name="OFFSET" value="2"><br><br>
+         <!-- <input type="submit" value="Submit"> -->
+       </form> 
+       <button onclick="myFunction2()">DE CODIFICAR</button>
+
+     </div>
+     <div id="Resultado_2">
+       <h3>Resultado DE-CODIFICADO</h3>
+       <p id="demo2"></p>
+     </div>
+   </div>
+
+   <script src="cipher.js"></script>
+   <script src="index.js"></script>
+
+   <script>
+   function myFunction1() {
+     var x = document.getElementById("frm1");
+     Texto_a_codificar = x.elements[0].value;
+     offset = x.elements[1].value;
+     Texto_codificado = window.cipher.encode(Texto_a_codificar, offset);
+
+     document.getElementById("demo").innerHTML = Texto_codificado;
+   }
+   </script>
+
+   <script>
+   function myFunction2() {
+     var x = document.getElementById("frm2");
+     Texto_a_codificar = x.elements[0].value;
+     offset = x.elements[1].value;
+     Texto_DE_codificado = window.cipher.decode(Texto_a_codificar, offset);
+
+     document.getElementById("demo2").innerHTML = Texto_DE_codificado;
+   }
+   </script>
+
+ </body>
 </html>
