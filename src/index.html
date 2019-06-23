@@ -11,6 +11,26 @@
      <img src="img/ensalada_cesar_1.jpg" alt="ensalada_cesar_1">
    </div>
 
+   <div id="root">
+     <h1>Nuestro Objetivo</h1>
+    <p> Nuestro objetivo es ofrecer una plataforma web en la que tu puedas hacer tus denuncias y/o entrega de información relevante a casos policiales de forma 100% anonima y segura. </p>
+
+     <h1>Cómo funciona:</h1>
+    <p> Si quieres mandar un mensaje encriptado a la policia, debes:  </p>
+    <p> - Escribir tu mensaje en la casilla "Texto a ser codificado"  </p>
+    <p> - Debes elegir un número positivo del 1 al 50, el cual se utilizara para codificar tu mensaje, en la casilla "OFFSET" (no debes compartir con nadie)  </p>
+    <p> - Precionar el boton CODIFICAR.  </p>
+    <p> - Finalmente veras tu mensaje codificado el cual sera envíado a la policia.  </p>
+
+     <h1>¿Quieres comprobar que tu mensaje fue bien códificado?:</h1>
+    <p> Para esto debes hacer lo siguiente:  </p>
+    <p> - Escribir tu mensaje CODIFICADO en la casilla "Texto a ser DE codificado"  </p>
+    <p> - Debes elegir el mismo número que utilizaste para codificar tu mensaje, en la casilla "OFFSET"  </p>
+    <p> - Precionar el boton DE CODIFICAR.  </p>
+    <p> - Finalmente veras tu mensaje DE codificado  </p>
+     <img src="img/ensalada_cesar_1.jpg" alt="ensalada_cesar_1">
+   </div>
+
    <div>
      <div id="Formulario_1">
        <h1>Codificar Mensaje:</h1>
@@ -72,6 +92,11 @@
      document.getElementById("demo2").innerHTML = Texto_DE_codificado;
    }
    </script>
+
+    <script>
+    document.getElementById("Formulario_1").style.display = "none";
+    document.getElementById("Resultado_1").style.display = "block";
+    </script>
 
  </body>
 </html>
