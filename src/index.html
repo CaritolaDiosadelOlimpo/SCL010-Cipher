@@ -70,8 +70,8 @@
      <div id="Formulario_2">
        <h1>DE Codificar Mensaje:</h1>
        <!-- <img src="img/Ejemplo_cesar_1.png" alt="Ejemplo_cesar_1"> -->
-       <form id="frm2">   <!-- action="/action_page.php" -->
-   <br>
+       <form id="frm2">   action="/action_page.php"
+        <br>
          Texto a ser codificado: <input type="text" name="Texto_a_codificar" value="ingresa tu texto aquí"><br>
          OFFSET: <input type="number" name="OFFSET" value="2"><br><br>
          <!-- <input type="submit" value="Submit"> -->
@@ -90,10 +90,10 @@
 
    <script>
    function myFunction1() {
-     var x = document.getElementById("frm1");
-     Texto_a_codificar = x.elements[0].value;
-     offset = x.elements[1].value;
-     Texto_codificado = window.cipher.encode(Texto_a_codificar, offset);
+     var elemnto_form1 = document.getElementById("frm1");
+     var Texto_a_codificar = elemnto_form1.elements[0].value;   //elements son los input del formulario
+     var offset = elemnto_form1.elements[1].value;
+     var Texto_codificado = window.cipher.encode(Texto_a_codificar, offset);  // cipher es el objeto, encode es el metodo del objeto
 
      document.getElementById("demo").innerHTML = Texto_codificado;
    }
@@ -109,6 +109,8 @@
      document.getElementById("demo2").innerHTML = Texto_DE_codificado;
    }
    </script>
+
+   <!-- los formularios consolida todos los imput en una sola variable X.elements (variable X) -->
 
     <!-- <script>
     document.getElementById("Formulario_1").style.display = "none";

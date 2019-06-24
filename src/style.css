@@ -1,4 +1,4 @@
-.ocultar{
+/*.ocultar{
 	display: none;
 
 }
@@ -18,4 +18,11 @@ img{
 	display:block;
 	
 
+}*/
+
+div {
+  width: 700px;
+  border: 15px solid pink;
+  padding: 50px;
+  margin: 20px;
 }
