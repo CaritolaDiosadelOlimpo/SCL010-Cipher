@@ -1,5 +1,6 @@
 
-Quiénes son los principales usuarios de producto?
+Quiénes son los princi
+pales usuarios de producto?
 RESP: los usuarios de mi plataforma son personas victimas, testigos, y agresores que deseen declarar algun acontecimiento, entregar informacion relevante a un acontecimiento delictual, testimonios, pruebas, declaraciones, entrega libre; son usuarios que tienen temor, desconfianza, verguenza de entregar una declaracion en persona, o de que su informacion sea facilmente detectada por la persona responsable del delito.
 
 
